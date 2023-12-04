@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".petDetails.PetDetails">
+
+    ////////////////////
+
+    <!--Circular imageView manual-->
+    <!--<androidx.cardview.widget.CardView
+        android:layout_marginTop="@dimen/layout_margin"
+        android:id="@+id/cardView2"
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        app:cardBackgroundColor="@color/clr_white"
+        app:cardCornerRadius="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="250dp">
+
+            <ImageView
+                android:id="@+id/iv_dogImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>-->
+
+    <!--Circular ImageView Plugin-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_dogImage"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="24dp"
+        android:paddingTop="10dp"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    ////////////////////
+
+    <TextView
+        android:id="@+id/tvTitleName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto"
+        android:padding="@dimen/layout_margin"
+        android:text="Name: "
+        android:textColor="@color/clr_white"
+        android:textSize="@dimen/layout_margin"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_dogImage"
+        tools:ignore="SpUsage" />
+
+    <TextView
+        android:id="@+id/tvLifeSpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:padding="@dimen/layout_margin"
+        android:text="Life Span: "
+        android:textColor="@color/clr_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleName" />
+
+    <TextView
+        android:id="@+id/tvOrigin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:padding="@dimen/layout_margin"
+        android:text="Origin : "
+        android:textColor="@color/clr_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLifeSpan" />
+
+    <TextView
+        android:id="@+id/tvTemperament"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:padding="@dimen/layout_margin"
+        android:text="Temperament : "
+        android:textColor="@color/clr_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOrigin" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_outerLayer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_rounded_corner_primary"
+    android:padding="10dp">
+
+    <TextView
+        android:fontFamily="@font/roboto"
+        android:id="@+id/item_title_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:textColor="@color/clr_white"
+        android:textSize="@dimen/layout_margin"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpUsage" />
+
+    <TextView
+        android:fontFamily="@font/roboto"
+        android:id="@+id/item_lifeSpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Life Span: "
+        android:textColor="@color/clr_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_title_name" />
+
+    <TextView
+        android:fontFamily="@font/roboto"
+        android:id="@+id/item_origin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Origin : "
+        android:textColor="@color/clr_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_lifeSpan" />
+
+    <TextView
+        android:fontFamily="@font/roboto"
+        android:id="@+id/item_temperament"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Temperament : "
+        android:textColor="@color/clr_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_origin" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

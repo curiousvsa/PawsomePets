@@ -1,0 +1,36 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="NameStyle">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">@dimen/small_padding</item>
+        <item name="android:paddingBottom">@dimen/small_padding</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="PlainTextStyle">
+        <item name="android:ems">10</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:inputType">textPersonName</item>
+    </style>
+
+    <style name="Theme.TransparentActivity" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:screenOrientation">portrait</item>
+    </style>
+
+
+</resources>
